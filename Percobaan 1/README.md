@@ -9,7 +9,63 @@ Memahami dan mengimplementasikan konsep percabangan (if-else) dalam pemrograman 
 
 ## ♻️ Langkah Percobaan
 1. Persiapkan alat dan bahan
+
+- Lakukan seperti halnya tugas pendahuluan poin 1
+- Pastikan Arduino Uno terhubung dengan komputer
+
 2. Program Percobaan
+```cpp
+#include <Arduino.h> // library dasar Arduino
+
+// ===================== KONFIGURASI PIN =====================
+// Tentukan pin digital yang digunakan untuk LED
+const int ledPin = ;   // isi dengan nomor pin (contoh: 6)
+
+// ===================== VARIABEL DELAY =====================
+// Variabel untuk mengatur kecepatan kedip LED (dalam milidetik)
+int timeDelay = ;  // isi nilai awal delay (contoh: 1000 ms)
+
+void setup() {
+
+  // ===================== MODE PIN =====================
+  // Atur pin LED sebagai OUTPUT agar bisa mengirim sinyal
+  pinMode(ledPin, );
+
+}
+
+void loop() {
+
+  // ===================== LED MENYALA =====================
+  // Kirim logika HIGH untuk menyalakan LED
+  digitalWrite(ledPin, );
+
+  // Beri jeda sesuai nilai timeDelay
+  delay(); // isi dengan variabel delay
+
+  // ===================== LED MATI =====================
+  // Kirim logika LOW untuk mematikan LED
+  digitalWrite(ledPin, );
+
+  // Beri jeda lagi agar terlihat efek kedip
+  delay(); // isi dengan variabel delay
+
+  // ===================== PERUBAHAN KECEPATAN =====================
+  // Setelah satu siklus nyala-mati, ubah kecepatan kedip LED
+
+  if (timeDelay <= ) { 
+    // Tentukan batas minimum delay (contoh: 100 ms)
+
+    delay();        // beri jeda sebelum reset (contoh: 3000 ms)
+
+    timeDelay = ;   // reset delay ke nilai awal (contoh: 1000 ms)
+
+  } else {
+
+    timeDelay -= ;  // kurangi delay secara bertahap (contoh: 100 ms)
+  }
+
+}
+```
 3. Simpan sketch dengan nama file modul1_percabangan
 4. Konfigurasi Rangkaian
 5. Berikutnya compile dan upload program ke dalam Arduino board. Perhatikan dan berikan analisi pada hasil yang terjadi, apakah sesuai dengan spesifikasi atau tidak. Tuliskan di Buku Catatan Praktikum
