@@ -117,7 +117,6 @@ Berikut hal yang perlu dilakukan setelah selesai praktikum:
 - Pastikan asisten telah menandatangani catatan percobaan kali ini pada Buku Catatan Praktikum Anda. Catatan percobaan yang tidak ditandatangani oleh asisten tidak akan dinilai.
 - Kumpulkan kode program tugas tambahan pada setiap percobaan dalam repository github dengan format name repository “Kelas(value)_Modul(value)_Nama_NIM”
 
-
 <h2></h2>
 
 <br>
