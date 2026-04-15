@@ -13,8 +13,8 @@ Fokus percobaan adalah memahami penggunaan perulangan (for) untuk mengontrol LED
 ## ♻️ Langkah Percobaan
 1. Persiapkan alat dan bahan
 
-a.	Lakukan seperti halnya tugas pendahuluan poin 1
-b.	Pastikan Arduino Uno terhubung dengan komputer
+- Lakukan seperti halnya tugas pendahuluan poin 1
+- Pastikan Arduino Uno terhubung dengan komputer
 
 2. Program percobaan
 
