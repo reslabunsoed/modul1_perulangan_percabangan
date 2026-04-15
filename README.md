@@ -97,7 +97,7 @@ Percabangan adalah struktur kontrol yang memungkinkan program mengambil keputusa
 
 Pada percobaan perulangan, praktikan akan mengontrol LED dengan kondisi-kondisi tertentu
 
-Selanjutnya dapat membuka bagian percobaan di [Percobaan 1A: Percabangan](https://github.com/reslabunsoed/modul1_perulangan_percabangan/tree/b182bc3db485fdbe19a6b11fa372b7d29c147894/Percobaan%201)
+Selanjutnya dapat membuka bagian percobaan di [Percobaan 1A: Percabangan](https://github.com/reslabunsoed/modul1_perulangan_percabangan/tree/aec6f4ec81d1976b9e314dd1fea0cfdb7a1edaae/Percobaan%201)
 
 <h3><a href="Percobaan 2">Percobaan 2A: Perulangan</a></h3>
 
