@@ -15,60 +15,38 @@ Memahami dan mengimplementasikan konsep percabangan (if-else) dalam pemrograman 
 
 2. Program Percobaan
 ```cpp
-#include <Arduino.h> // library dasar Arduino
-
-// ===================== KONFIGURASI PIN =====================
-// Tentukan pin digital yang digunakan untuk LED
-const int ledPin = ;   // isi dengan nomor pin (contoh: 6)
-
-// ===================== VARIABEL DELAY =====================
-// Variabel untuk mengatur kecepatan kedip LED (dalam milidetik)
-int timeDelay = ;  // isi nilai awal delay (contoh: 1000 ms)
+const int ledPin = 6;     // Menentukan pin digital yang digunakan untuk LED
+int timeDelay = 1000;     // Waktu delay awal (dalam milidetik)
 
 void setup() {
-
-  // ===================== MODE PIN =====================
-  // Atur pin LED sebagai OUTPUT agar bisa mengirim sinyal
-  pinMode(ledPin, );
-
+  pinMode(ledPin, OUTPUT);  // Mengatur pin LED sebagai output
 }
 
 void loop() {
+  // Menyalakan LED (HIGH = ON)
+  digitalWrite(ledPin, HIGH);
+  delay(timeDelay);         // Tunggu sesuai waktu delay
 
-  // ===================== LED MENYALA =====================
-  // Kirim logika HIGH untuk menyalakan LED
-  digitalWrite(ledPin, );
+  // Mematikan LED (LOW = OFF)
+  digitalWrite(ledPin, LOW);
+  delay(timeDelay);         // Tunggu lagi sesuai waktu delay
 
-  // Beri jeda sesuai nilai timeDelay
-  delay(); // isi dengan variabel delay
-
-  // ===================== LED MATI =====================
-  // Kirim logika LOW untuk mematikan LED
-  digitalWrite(ledPin, );
-
-  // Beri jeda lagi agar terlihat efek kedip
-  delay(); // isi dengan variabel delay
-
-  // ===================== PERUBAHAN KECEPATAN =====================
   // Setelah satu siklus nyala-mati, ubah kecepatan kedip LED
-
-  if (timeDelay <= ) { 
-    // Tentukan batas minimum delay (contoh: 100 ms)
-
-    delay();        // beri jeda sebelum reset (contoh: 3000 ms)
-
-    timeDelay = ;   // reset delay ke nilai awal (contoh: 1000 ms)
-
+  if (timeDelay <= 100) {
+    // Jika delay sudah sangat cepat (<= 100 ms)
+    delay(3000);            // Beri jeda 3 detik sebelum mengulang
+    timeDelay = 1000;       // Reset delay ke nilai awal (lambat lagi)
   } else {
-
-    timeDelay -= ;  // kurangi delay secara bertahap (contoh: 100 ms)
+    // Jika belum mencapai batas minimum
+    timeDelay -= 100;       // Kurangi delay 100 ms agar LED berkedip lebih cepat
   }
-
 }
 ```
 3. Simpan sketch dengan nama file modul1_percabangan
 4. Konfigurasi Rangkaian
 5. Berikutnya compile dan upload program ke dalam Arduino board. Perhatikan dan berikan analisi pada hasil yang terjadi, apakah sesuai dengan spesifikasi atau tidak. Tuliskan di Buku Catatan Praktikum
+
+https://github.com/user-attachments/assets/173b2f90-c611-4f0a-a696-b3776e8a02c9
 
 ## 💡 Pertanyaan Praktikum
 1)	Gambarkan schematic diagramnya!
